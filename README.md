@@ -1,0 +1,2 @@
+# HMIF
+Repository untuk website resmi HIMPUNAN MAHASISWA INFORMATIKA UNJANI
