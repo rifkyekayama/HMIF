@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="product" content="Metro UI CSS Framework">
+	<meta name="description" content="Simple responsive css framework">
+	<meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
+
+	<?php echo HTML::style('assets/metro/css/metro-bootstrap.css'); ?>
+
+	<?php echo HTML::style('assets/metro/css/metro-bootstrap-responsive.css'); ?>
+
+	<?php echo HTML::style('assets/metro/css/iconFont.css'); ?>
+
+	<?php echo HTML::style('assets/metro/css/docs.css'); ?>
+
+	<?php echo HTML::style('assets/metro/js/prettify/prettify.css'); ?>
+
+
+	<!-- Load JavaScript Libraries -->
+	<?php echo HTML::script('assets/metro/js/jquery/jquery.min.js'); ?>
+
+	<?php echo HTML::script('assets/metro/js/jquery/jquery.widget.min.js'); ?>
+
+	<?php echo HTML::script('assets/metro/js/jquery/jquery.mousewheel.js'); ?>
+
+	<?php echo HTML::script('assets/metro/js/prettify/prettify.js'); ?>
+
+
+	<!-- Metro UI CSS JavaScript plugins -->
+	<?php echo HTML::script('assets/metro/js/load-metro.js'); ?>
+
+
+	<!-- Local JavaScript -->
+	<?php echo HTML::script('assets/metro/js/docs.js'); ?>
+
+	<?php echo HTML::script('assets/metro/js/github.info.js'); ?>
+
+	<?php echo HTML::script('assets/metro/js/metro.min.js'); ?>
+
+
+	<title>Metro UI CSS : Metro Bootstrap CSS Library</title>
+
+	<!--<link rel="shortcut icon" href="<?php echo asset('/assets/img/favicon.png'); ?>" type="image/x-icon" />-->
+</head>
+<body class="metro">
+    <div class="container">
+        <nav class="navigation-bar">
+		    <nav class="navigation-bar-content">
+		        <div class="element">
+		            <a class="dropdown-toggle" href="#">METRO UI CSS</a>
+		            <ul class="dropdown-menu" data-role="dropdown">
+		                <li><a href="#">Main</a></li>
+		                <li><a href="#">File Open</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">Print...</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">Exit</a></li>
+		            </ul>
+		        </div>
+		        <span class="element-divider"></span>
+		        <ul class="element-menu">
+                    <li>
+                        <a class="dropdown-toggle" href="#">Base CSS</a>
+                        <ul class="dropdown-menu" data-role="dropdown">
+                            <li><a href="requirements.html">Requirements</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle">General CSS</a>
+                                <ul class="dropdown-menu" data-role="dropdown">
+                                    <li><a href="global.html">Global styles</a></li>
+                                    <li><a href="grid.html">Grid system</a></li>
+                                    <div class="divider"></div>
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="tables.html">Tables</a></li>
+                                    <li><a href="forms.html">Forms</a></li>
+                                    <li><a href="buttons.html">Buttons</a></li>
+                                    <li><a href="images.html">Images</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="responsive.html">Responsive</a></li>
+                            <li class="disabled"><a href="layouts.html">Layouts and templates</a></li>
+                            <li class="divider"></li>
+                            <li><a href="icons.html">Icons</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle"  href="#">Community</a>
+                        <ul class="dropdown-menu" data-role="dropdown">
+                            <li class="disabled"><a href="http://blog.metroui.net">Blog</a></li>
+                            <li class="disabled"><a href="http://forum.metroui.net">Community Forum</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://github.com/olton/Metro-UI-CSS">Github</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://github.com/olton/Metro-UI-CSS/blob/master/LICENSE">License</a></li>
+                        </ul>
+                    </li>
+                </ul>
+		 
+		        <span class="element-divider"></span>
+		        <a class="element brand" href="#"><span class="icon-spin"></span></a>
+		        <a class="element brand" href="#"><span class="icon-printer"></span></a>
+		        <span class="element-divider"></span>
+		 
+		        <div class="element input-element">
+		            <form>
+		                <div class="input-control text">
+		                    <input type="text" placeholder="Search...">
+		                    <button class="btn-search"></button>
+		                </div>
+		            </form>
+		        </div>
+		 
+		        <div class="element place-right">
+		            <a class="dropdown-toggle" href="#">
+		                <span class="icon-cog"></span>
+		            </a>
+		            <ul class="dropdown-menu place-right" data-role="dropdown">
+		                <li><a href="#">Products</a></li>
+		                <li><a href="#">Download</a></li>
+		                <li><a href="#">Support</a></li>
+		                <li><a href="#">Buy Now</a></li>
+		            </ul>
+		        </div>
+		        <span class="element-divider place-right"></span>
+		        <a class="element place-right" href="#"><span class="icon-locked-2"></span></a>
+		        <span class="element-divider place-right"></span>
+		        <button class="element image-button image-left place-right">
+		            Sergey Pimenov
+		            <?php echo HTML::image('assets/metro/images/me.jpg'); ?>
+
+		        </button>
+		    </nav>
+		</nav>
+    </div>
+</body>
+</html>

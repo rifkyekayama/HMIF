@@ -1,0 +1,43 @@
+<?php $__env->startSection('content'); ?>
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">
+			Halaman
+			<small> Pencarian mahasiswa</small>
+		</h1>
+		<div class="row">
+			<div class="col-lg-6">
+				<?php echo Form::open(array('url'=>'admin/search')); ?>
+
+				<div class="form-group input-group">
+                    <?php echo Form::text('cari', null, array('class' => 'form-control')); ?>
+
+                    <?php echo Form::hidden('seleksi','1'); ?>
+
+                    <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                </div>
+                <?php echo Form::close(); ?>
+
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-lg-6">
+				<?php echo Form::open(array('url'=>'admin/search')); ?>
+
+				<div class="form-group">
+                    <?php echo Form::selectYear('angkatan', 2007, 2014, 2014, array('class' => 'form-control')); ?>
+
+                    <?php echo Form::hidden('seleksi','2'); ?>
+
+                    <?php echo Form::submit('Search', array('class'=>'btn btn-lg btn-primary')); ?>
+
+                </div>
+                <?php echo Form::close(); ?>
+
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
